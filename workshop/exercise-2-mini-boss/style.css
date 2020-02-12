@@ -40,8 +40,12 @@ body{
 
 }
 
+.btn:focus {outline:0;}
+
+
 .btn:hover{
     cursor: pointer;
+    
 }
 
 .btn:hover{
@@ -73,7 +77,7 @@ h1{
 }
 
 .form {
-    width: 20px;
+    width: 40px;
     font-size: 40px;
     padding: 10px 20px;
 }
