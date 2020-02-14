@@ -26,7 +26,7 @@ Open the door, when someone is there.
 
 #### User Interface Events
 
-- `load`
+- `load` 
 - `unload`
 - `error`
 - `resize`
@@ -38,8 +38,8 @@ Open the door, when someone is there.
 
 These events fire when the HTML elements you can interact with gain/ lose focus.
 
-- `focus`
-- `blur`
+- `focus`  --> ex: like click on a form
+- `blur` --> ex: remove the focus of the form element 
 - `focusin` (_new; not supported by Firefox_)
 - `focusout` (_new; same as blur; not supported by Firefox_)
 
@@ -99,6 +99,18 @@ All DOM nodes have methods we can use to _notify_ us of an event.
 
 ```js
 // Example
+
+const button = document.getElementById('btn');
+function handleOuch = function(){
+    console.log('outch!');
+}
+//add it
+button.addEventListener('click', handleOuch );
+//remove it
+button.removeEventListener('click', handleOuc );
+
+
+
 
 ```
 

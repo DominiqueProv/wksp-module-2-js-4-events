@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+
+    <title>The time</title>
+
+
+
+</head>
+
+<body>
+    <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+    
+    
+    <div class="stopwatch">
+        <h1 id="timer">00 : 00 . 000</h1>
+    <div>
+        <button class="btn" id="toggle">Start</button>
+        <button class="btn" id="reset">Reset</button>
+    </div>
+    </div>
+
+    <div class="countdown">
+        <p id="displaySeconds"></p>
+        <form >
+            <input class="form" type="text" value="" id="extra7" name="extra7" onkeypress="return isNumber(event)" maxlength="1"/> 
+            <button class="btn" id="start">Countdown</button>
+
+        </form>
+
+    
+    
+
+
+
+    <script src="app.js"></script>
+    
+</body>
+
+</html>
